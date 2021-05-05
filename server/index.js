@@ -8,6 +8,7 @@ app.use(cors())
 
 //routes
 app.use('/auth', require('./routes/jwtAuth'));
+app.use('/dashboard', require('./routes/dashboard'));
 
 app.listen(PORT,  ()=>{
     console.log(`serving is running on port ${4000}`);
